@@ -1,0 +1,176 @@
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+color:white;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438');
+background-size:cover;
+background-attachment:fixed;
+background-position:center;
+}
+
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.85);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover,
+.active{
+color:#00ffcc;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:140px 20px;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:#00ffcc;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.1);
+}
+
+/* SECTIONS */
+section{
+padding:70px 20px;
+text-align:center;
+}
+
+/* GALLERY */
+.gallery-container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:40px;
+}
+
+.image-box{
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.image-box img{
+width:100%;
+transition:0.5s;
+}
+
+.image-box:hover img{
+transform:scale(1.15);
+}
+
+/* PRICING */
+.pricing-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:30px;
+border-radius:15px;
+width:250px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.premium{
+background:#00ffcc;
+color:black;
+}
+
+/* FORMS */
+.form-section{
+padding:100px 20px;
+text-align:center;
+}
+
+form{
+max-width:400px;
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,select,textarea{
+padding:12px;
+border-radius:8px;
+border:none;
+outline:none;
+}
+
+textarea{
+resize:none;
+height:100px;
+}
+
+.contact-info{
+margin-top:30px;
+}
+
+/* External CSS requirement */
+.external-trainer{
+color:darkcyan;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.gallery-container{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.gallery-container{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:35px;
+}
+}
+
