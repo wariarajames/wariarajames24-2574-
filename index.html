@@ -1,106 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elite Fitness Gym</title>
 
 <link rel="stylesheet" href="style.css">
 
-<!-- Internal CSS (Requirement) -->
 <style>
-.membership-highlight{
+/* INTERNAL CSS */
+
+.internal-style{
 color: orange;
 font-weight: bold;
-font-size: 20px;
 }
 
-.trainer-title{
-color: brown;
-letter-spacing: 2px;
+.highlight2{
+color: green;
 }
+
+.building2{
+color: darkred;
+}
+
 </style>
 
 </head>
+
 <body>
 
-<nav>
-<div class="logo">ELITE FITNESS</div>
-<ul>
-<li><a href="index.html" class="active">Home</a></li>
-<li><a href="booking.html">Booking</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+<!-- H1 -->
+<h1 id="main-title" style="color:blue;">Elite Fitness Gym</h1>
 
-<!-- HERO -->
-<section class="hero">
-<h1 style="color:#00ffcc;">Transform Your Body</h1> <!-- Inline CSS -->
-<p>Your fitness journey starts here.</p>
-<a href="booking.html" class="btn">Book a Session</a>
-</section>
+<!-- H2 -->
+<h2 class="highlight2">Transform Your Body</h2>
 
-<!-- ABOUT -->
-<section class="about">
-<h2>Why Choose Us?</h2>
-<p class="membership-highlight">
-We offer professional training programs tailored to your goals.
+<!-- H3 -->
+<h3 style="color:purple;">Our Training Philosophy</h3>
+
+<!-- H4 -->
+<h4 class="mini-title">Programs For Everyone</h4>
+
+<!-- Paragraphs -->
+
+<p style="color:blue; font-style:italic;">
+Elite Fitness Gym helps individuals improve strength, endurance, and confidence through professional training programs.
 </p>
-<p>Fully equipped gym with certified trainers and modern equipment.</p>
-</section>
 
-<!-- GALLERY -->
-<section class="gallery">
-<h2>Our Facilities</h2>
+<p class="internal-style">
+Our gym offers weight training, cardio sessions, and personalized fitness coaching.
+</p>
 
-<div class="gallery-container">
+<p class="external-style">
+Members benefit from modern equipment and supportive trainers who guide them through every stage of their fitness journey.
+</p>
 
-<div class="image-box"><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e"></div>
-<div class="image-box"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61"></div>
-<div class="image-box"><img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba"></div>
-<div class="image-box"><img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1"></div>
-<div class="image-box"><img src="https://images.unsplash.com/photo-1594737625785-c0e1e2b5a2a5"></div>
+<p class="text-style">
+Our mission is to help people develop healthy habits and maintain an active lifestyle.
+</p>
 
-</div>
-</section>
+<p id="motivation">
+“Your body can stand almost anything. It’s your mind you have to convince.”
+</p>
 
-<!-- PRICING -->
-<section class="pricing">
-<h2>Membership Plans</h2>
+<p class="text-style">
+We believe consistency and dedication lead to long-term fitness success.
+</p>
 
-<div class="pricing-container">
+<!-- Line Breaks -->
+<br>
+<br>
+<br>
+<br>
 
-<div class="card">
-<h3>Basic</h3>
-<p>$30 / month</p>
-<p>Access to gym equipment</p>
-</div>
+<hr>
+<hr>
+<hr>
 
-<div class="card premium">
-<h3>Premium</h3>
-<p>$60 / month</p>
-<p>Personal trainer + All classes</p>
-</div>
+<!-- Preformatted text -->
+<pre>
+Elite Fitness Weekly Plan
+Monday: Strength Training
+Wednesday: Cardio
+Friday: Full Body Workout
+</pre>
 
-<div class="card">
-<h3>Pro</h3>
-<p>$90 / month</p>
-<p>Full access + Nutrition plan</p>
-</div>
+<!-- Lists -->
 
-</div>
-</section>
+<h2>Our Services</h2>
 
-<!-- TRAINERS -->
-<section class="trainers">
-<h2 class="trainer-title">MEET OUR TRAINERS</h2>
-<h3 style="color:purple;">Certified Strength Coach</h3> <!-- Inline -->
-<h3 class="external-trainer">Professional Cardio Expert</h3>
-</section>
+<ul>
+<li>Personal Training</li>
+<li>Strength Training</li>
+<li>Cardio Programs</li>
+<li>Nutrition Guidance</li>
+<li>Group Classes</li>
+</ul>
 
-<footer>
-<p>© 2026 Elite Fitness Gym | All Rights Reserved</p>
-</footer>
+<ol>
+<li>Warm Up</li>
+<li>Stretching</li>
+<li>Workout Session</li>
+<li>Cool Down</li>
+<li>Recovery</li>
+</ol>
+
+<!-- Nested List -->
+
+<h3>Membership Plans</h3>
+
+<ul>
+<li>Basic Plan
+<ul>
+<li>Gym Access</li>
+<li>Cardio Equipment</li>
+</ul>
+</li>
+
+<li>Premium Plan
+<ul>
+<li>Personal Trainer</li>
+<li>Nutrition Plan</li>
+</ul>
+</li>
+
+<li>Elite Plan
+<ul>
+<li>All Premium Features</li>
+<li>VIP Training Area</li>
+</ul>
+</li>
+
+</ul>
+
+<!-- Table -->
+
+<h2>Weekly Class Schedule</h2>
+
+<table border="1">
+
+<tr>
+<th>Day</th>
+<th>Class</th>
+<th>Trainer</th>
+<th>Time</th>
+<th>Room</th>
+</tr>
+
+<tr>
+<td>Monday</td>
+<td>Strength Training</td>
+<td>James</td>
+<td>6 AM</td>
+<td>A1</td>
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td>Cardio Blast</td>
+<td>Sarah</td>
+<td>7 AM</td>
+<td>B1</td>
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td>Yoga</td>
+<td>Linda</td>
+<td>5 PM</td>
+<td>C1</td>
+</tr>
+
+<tr>
+<td>Thursday</td>
+<td>HIIT</td>
+<td>Mike</td>
+<td>6 PM</td>
+<td>A2</td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td>Full Body</td>
+<td>Alex</td>
+<td>7 PM</td>
+<td>B2</td>
+</tr>
+
+</table>
 
 </body>
 </html>
