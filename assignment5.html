@@ -1,9 +1,134 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Final Project</title>
+<meta charset="UTF-8">
+<title>Mental Health Awareness - Final Project</title>
+
+<!-- External CSS -->
 <link rel="stylesheet" href="style.css">
+
+<style>
+/* Internal CSS */
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#6a9fb5,#c9e4ca);
+    color:#222;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    background:#1f2937;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#a7f3d0;
+}
+
+/* Hero */
+
+.hero{
+    height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    background-image:url("https://images.unsplash.com/photo-1493836512294-502baa1986e2");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius:10px;
+}
+
+/* Cards */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Image Grid */
+
+.image-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    padding:40px;
+}
+
+.image-grid img{
+    width:100%;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.image-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* Two Columns */
+
+.columns{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    padding:40px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1f2937;
+    color:white;
+}
+</style>
 </head>
 
 <body>
@@ -14,50 +139,83 @@
 <a href="assignment2.html">Assignment 2</a>
 <a href="assignment3.html">Assignment 3</a>
 <a href="assignment4.html">Assignment 4</a>
-<a href="assignment5.html">Final Project</a>
 </nav>
 
-<h1>Mental Health Awareness Project</h1>
+<div class="hero">
+<h1 style="color:#fff;">Mental Health Awareness</h1> <!-- inline CSS -->
+</div>
 
-<div style="display:flex">
+<section class="card-container">
+<div class="card">
+<h3>Self Care</h3>
+<p>Taking care of your mental health includes rest, exercise and healthy habits.</p>
+</div>
 
-<div style="width:50%">
+<div class="card">
+<h3>Mindfulness</h3>
+<p>Practicing mindfulness can reduce stress and help people stay present.</p>
+</div>
 
-<h2>Why Mental Health Matters</h2>
+<div class="card">
+<h3>Community Support</h3>
+<p>Talking to friends, family or professionals improves mental wellbeing.</p>
+</div>
+</section>
 
-<p>
-Mental health affects how people think, feel, and behave.
-</p>
+<section class="columns">
 
-<p>
-Awareness helps reduce stigma and encourages seeking help.
-</p>
-
+<div>
+<h2>Healthy Habits</h2>
 <ul>
-<li>Self care
-<ul>
-<li>Exercise</li>
-<li>Meditation</li>
-</ul>
+<li>Sleep regularly</li>
+<li>Exercise daily</li>
+<li>Eat healthy foods</li>
+<li>Practice meditation
+    <ul>
+        <li>Breathing exercises</li>
+        <li>Guided meditation</li>
+    </ul>
 </li>
 </ul>
-
 </div>
 
-<div style="width:50%">
+<div>
+<h2>Mental Health Activities</h2>
+<table>
+<tr>
+<th>Activity</th>
+<th>Benefit</th>
+</tr>
 
-<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" width="250">
+<tr>
+<td>Exercise</td>
+<td>Reduces stress</td>
+</tr>
 
-<video width="250" controls>
-<source src="https://www.w3schools.com/html/mov_bbb.mp4">
-</video>
+<tr>
+<td>Meditation</td>
+<td>Improves focus</td>
+</tr>
 
+<tr>
+<td>Journaling</td>
+<td>Emotional clarity</td>
+</tr>
+</table>
 </div>
 
-</div>
+</section>
+
+<section class="image-grid">
+<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+<img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88">
+</section>
 
 <footer>
-<p>© 2026 Mental Health Awareness Project</p>
+<p>© 2026 Mental Health Awareness Project | Created by James</p>
 </footer>
 
 </body>
