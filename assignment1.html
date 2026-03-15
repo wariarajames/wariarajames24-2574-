@@ -1,52 +1,115 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>Assignment 1</title>
+
+<title>Mental Health Awareness</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+background: #f0f7f7;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+.search-box{
+margin:20px;
+}
+
+.image-grid{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+gap:15px;
+padding:20px;
+}
+
+.image-grid img{
+width:100%;
+border-radius:10px;
+transition:0.3s;
+}
+
+.image-grid img:hover{
+transform:scale(1.05);
+}
+
+.video-section{
+margin:30px;
+}
+
+table{
+margin:auto;
+border-collapse:collapse;
+}
+
+th, td{
+padding:10px;
+border:1px solid #999;
+}
+
+th{
+background:#4c9a9a;
+color:white;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <nav>
+
 <a href="index.html">Home</a>
 <a href="assignment1.html">Assignment 1</a>
 <a href="assignment2.html">Assignment 2</a>
 <a href="assignment3.html">Assignment 3</a>
 <a href="assignment4.html">Assignment 4</a>
 <a href="assignment5.html">Final Project</a>
+
 </nav>
 
-<h1>Understanding Mental Health</h1>
-
-<input type="text" placeholder="Search mental health topics">
+<h1>Mental Health Awareness</h1>
 
 <p>
-Mental health awareness helps people understand emotional wellbeing,
-reduce stigma, and support individuals facing psychological challenges.
+Mental health awareness helps people understand emotional wellbeing, reduce stigma, and support individuals who may be struggling silently.
 </p>
 
-<h2>Images About Mental Wellness</h2>
+<div class="search-box">
+<input type="text" placeholder="Search mental health topics..." size="40">
+</div>
 
-<img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2" width="200">
-<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" width="200">
-<img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" width="200">
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" width="200">
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" width="200">
+<h2>Practices That Improve Mental Health</h2>
 
-<h2>Mental Health Videos</h2>
+<div class="image-grid">
 
-<video width="300" controls>
-<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+<img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+<img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88">
+
+</div>
+
+<h2>Mental Health Education Videos</h2>
+
+<div class="video-section">
+
+<video width="320" controls>
+<source src="https://www.w3schools.com/html/mov_bbb.mp4">
 </video>
 
-<video width="300" controls>
-<source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+<video width="320" controls>
+<source src="https://www.w3schools.com/html/movie.mp4">
 </video>
 
-<h2>Weekly Self-Care Schedule</h2>
+</div>
 
-<table border="1">
+<h2>Simple Self-Care Schedule</h2>
+
+<table>
 
 <tr>
 <th>Day</th>
