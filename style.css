@@ -97,6 +97,26 @@ color: #333;
 .assignment-links a:hover{
 background: #0077b6;
 }
+/* Paragraph 3 */
+
+.paragraph3{
+color:black;
+font-family: Arial;
+}
+
+/* Highlight 3 */
+
+.highlight3{
+color: teal;
+font-family: Tahoma;
+}
+
+/* Building 3 */
+
+.building3{
+color: darkblue;
+font-size: 22px;
+}
 body{
 background-color:#f5f7fa;
 font-family: Arial, sans-serif;
