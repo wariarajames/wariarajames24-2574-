@@ -1,98 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Final Project - Mental Health Awareness</title>
-<link rel="stylesheet" href="style.css">
+<title>Mental Health Awareness</title>
 
 <style>
 
-body{
+/* RESET */
+*{
 margin:0;
-font-family:Arial;
-background:linear-gradient(135deg,#89c9b8,#d7f3ec);
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
-/* Navbar */
+/* BODY */
+body{
+background:linear-gradient(120deg,#0f172a,#1e293b);
+color:#f1f5f9;
+}
+
+/* NAVBAR */
 nav{
-background:#1f2937;
-padding:15px;
-text-align:center;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:20px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
 }
 
 nav a{
-color:white;
-margin:0 15px;
+color:#e2e8f0;
 text-decoration:none;
-font-weight:bold;
+font-weight:500;
+transition:0.3s;
 }
 
 nav a:hover{
-color:#7dd3fc;
+color:#38bdf8;
 }
 
-/* Hero */
+/* HERO */
 .hero{
 text-align:center;
-padding:40px;
-color:white;
-background:url("https://images.unsplash.com/photo-1506126613408-eca07ce68773") center/cover;
+padding:80px 20px;
 }
 
-/* Columns */
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.hero p{
+opacity:0.7;
+}
+
+/* SECTION */
+section{
+padding:40px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+/* PARAGRAPHS */
+.text p{
+margin-bottom:15px;
+line-height:1.6;
+opacity:0.8;
+}
+
+/* GRID */
 .columns{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:20px;
-padding:30px;
+gap:25px;
 }
 
-/* Cards */
+/* CARD */
 .card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.3s;
 }
 
-/* Image grid */
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* LIST */
+ul{
+padding-left:20px;
+}
+
+ul li{
+margin:8px 0;
+}
+
+/* TABLE */
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid rgba(255,255,255,0.1);
+text-align:left;
+}
+
+/* IMAGES */
 .images{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:10px;
-padding:20px;
+gap:15px;
 }
 
 .images img{
 width:100%;
-border-radius:10px;
+border-radius:12px;
+transition:0.3s;
 }
 
-/* Videos */
+.images img:hover{
+transform:scale(1.05);
+}
+
+/* VIDEOS */
 .videos{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:15px;
-padding:20px;
 }
 
-/* Tables */
-table{
+video{
 width:100%;
-border-collapse:collapse;
-margin-top:20px;
+border-radius:12px;
 }
 
-th,td{
-border:1px solid #ccc;
-padding:10px;
-}
-
-/* Footer */
+/* FOOTER */
 footer{
 text-align:center;
-padding:20px;
-background:#1f2937;
-color:white;
+padding:25px;
+margin-top:40px;
+background:rgba(255,255,255,0.05);
 }
 
 </style>
@@ -100,6 +156,7 @@ color:white;
 
 <body>
 
+<!-- NAV -->
 <nav>
 <a href="index.html">Home</a>
 <a href="#">About</a>
@@ -108,35 +165,36 @@ color:white;
 <a href="assignment5.html">Project</a>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
 <h1>Mental Health Awareness</h1>
-<p>Promoting well-being and emotional balance</p>
+<p>Building a healthier mind, one step at a time</p>
 </div>
 
-<!-- 5 Paragraphs -->
-<section style="padding:20px;">
-<p>Mental health is important for overall well-being.</p>
-<p>Awareness helps reduce stigma in society.</p>
-<p>Support systems improve emotional stability.</p>
-<p>Healthy habits promote better mental health.</p>
-<p>Seeking help is a sign of strength.</p>
+<!-- TEXT -->
+<section class="text">
+<p>Mental health plays a key role in how we think, feel, and behave daily.</p>
+<p>Understanding mental health helps break stigma and encourages open conversations.</p>
+<p>Developing healthy habits contributes to long-term emotional stability.</p>
+<p>Support systems such as friends and family are essential for well-being.</p>
+<p>Seeking help is a sign of strength and self-awareness.</p>
 </section>
 
-<!-- Columns -->
-<div class="columns">
+<!-- COLUMNS -->
+<section class="columns">
 
 <div class="card">
 <h2>Healthy Habits</h2>
 
 <ul>
 <li>Sleep well</li>
-<li>Exercise</li>
-<li>Eat healthy</li>
-<li>Meditate</li>
+<li>Exercise regularly</li>
+<li>Eat balanced meals</li>
+<li>Meditate daily</li>
 <li>Stay hydrated
     <ul>
-        <li>Drink water</li>
-        <li>Avoid sugar</li>
+        <li>Drink enough water</li>
+        <li>Avoid too much sugar</li>
     </ul>
 </li>
 </ul>
@@ -144,17 +202,17 @@ color:white;
 </div>
 
 <div class="card">
-<h2>Activities Table</h2>
+<h2>Activities & Benefits</h2>
 
 <table>
 <tr><th>Activity</th><th>Benefit</th></tr>
 <tr><td>Exercise</td><td>Reduces stress</td></tr>
 <tr><td>Meditation</td><td>Improves focus</td></tr>
-<tr><td>Journaling</td><td>Clarity</td></tr>
+<tr><td>Journaling</td><td>Emotional clarity</td></tr>
 </table>
 
 <table>
-<tr><th>Day</th><th>Task</th></tr>
+<tr><th>Day</th><th>Routine</th></tr>
 <tr><td>Monday</td><td>Meditation</td></tr>
 <tr><td>Wednesday</td><td>Exercise</td></tr>
 <tr><td>Friday</td><td>Relaxation</td></tr>
@@ -162,9 +220,12 @@ color:white;
 
 </div>
 
-</div>
+</section>
 
-<!-- Images -->
+<!-- IMAGES -->
+<section>
+<h2 style="margin-bottom:20px;">Gallery</h2>
+
 <div class="images">
 <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
 <img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2">
@@ -173,19 +234,25 @@ color:white;
 <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
 </div>
 
-<!-- Videos -->
+</section>
+
+<!-- VIDEOS -->
+<section>
+<h2 style="margin-bottom:20px;">Videos</h2>
+
 <div class="videos">
-
-<video controls width="250"><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-<video controls width="250"><source src="https://www.w3schools.com/html/movie.mp4"></video>
-<video controls width="250"><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-<video controls width="250"><source src="https://www.w3schools.com/html/movie.mp4"></video>
-<video controls width="250"><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-
+<video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+<video controls><source src="https://www.w3schools.com/html/movie.mp4"></video>
+<video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+<video controls><source src="https://www.w3schools.com/html/movie.mp4"></video>
+<video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
 </div>
 
+</section>
+
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Mental Health Awareness | James</p>
+<p>© 2026 Mental Health Awareness | Designed by James</p>
 </footer>
 
 </body>
