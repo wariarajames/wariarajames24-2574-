@@ -1,120 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Final Project - Mental Health Awareness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mental Health Awareness</title>
 <link rel="stylesheet" href="style.css">
-
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:linear-gradient(135deg,#89c9b8,#d7f3ec);
-}
-
-/* Navbar */
-nav{
-background:#1f2937;
-padding:15px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#7dd3fc;
-}
-
-/* Hero */
-.hero{
-text-align:center;
-padding:40px;
-color:white;
-background:url("https://images.unsplash.com/photo-1506126613408-eca07ce68773") center/cover;
-}
-
-/* Columns */
-.columns{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-padding:30px;
-}
-
-/* Cards */
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Image grid */
-.images{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-padding:20px;
-}
-
-.images img{
-width:100%;
-border-radius:10px;
-}
-
-/* Videos */
-.videos{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:15px;
-padding:20px;
-}
-
-/* Tables */
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-}
-
-th,td{
-border:1px solid #ccc;
-padding:10px;
-}
-
-/* Footer */
-footer{
-text-align:center;
-padding:20px;
-background:#1f2937;
-color:white;
-}
-
-</style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
 <a href="index.html">Home</a>
-<a href="#">About</a>
-<a href="#">Resources</a>
-<a href="#">Contact</a>
-<a href="assignment5.html">Project</a>
+<a href="about.html">About</a>
+<a href="resources.html">Resources</a>
+<a href="contact.html">Contact</a>
+<a href="project.html">Project</a>
 </nav>
 
-<div class="hero">
+<!-- HERO -->
+<header class="hero">
 <h1>Mental Health Awareness</h1>
 <p>Promoting well-being and emotional balance</p>
-</div>
+</header>
 
-<!-- 5 Paragraphs -->
-<section style="padding:20px;">
+<!-- PARAGRAPHS -->
+<section class="content">
 <p>Mental health is important for overall well-being.</p>
 <p>Awareness helps reduce stigma in society.</p>
 <p>Support systems improve emotional stability.</p>
@@ -122,12 +33,11 @@ color:white;
 <p>Seeking help is a sign of strength.</p>
 </section>
 
-<!-- Columns -->
-<div class="columns">
+<!-- TWO COLUMNS -->
+<section class="columns">
 
 <div class="card">
 <h2>Healthy Habits</h2>
-
 <ul>
 <li>Sleep well</li>
 <li>Exercise</li>
@@ -140,7 +50,6 @@ color:white;
     </ul>
 </li>
 </ul>
-
 </div>
 
 <div class="card">
@@ -161,29 +70,38 @@ color:white;
 </table>
 
 </div>
+</section>
 
-</div>
+<!-- IMAGES IN CONTAINERS -->
+<section class="images">
+<div class="img-box"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" alt="Relaxing"></div>
+<div class="img-box"><img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2" alt="Nature"></div>
+<div class="img-box"><img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Meditation"></div>
+<div class="img-box"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Peace"></div>
+<div class="img-box"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Wellness"></div>
+</section>
 
-<!-- Images -->
-<div class="images">
-<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
-<img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2">
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
-</div>
+<!-- VIDEOS IN CONTAINERS -->
+<section class="videos">
+<div class="card"><video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video></div>
+<div class="card"><video controls><source src="https://www.w3schools.com/html/movie.mp4"></video></div>
+<div class="card"><video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video></div>
+<div class="card"><video controls><source src="https://www.w3schools.com/html/movie.mp4"></video></div>
+<div class="card"><video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video></div>
+</section>
 
-<!-- Videos -->
-<div class="videos">
+<!-- EXTRA FEATURE (FORM) -->
+<section class="form-section">
+<h2>Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name"><br><br>
+<input type="email" placeholder="Your Email"><br><br>
+<textarea placeholder="Your Message"></textarea><br><br>
+<button type="submit">Send</button>
+</form>
+</section>
 
-<video controls width="250"><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-<video controls width="250"><source src="https://www.w3schools.com/html/movie.mp4"></video>
-<video controls width="250"><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-<video controls width="250"><source src="https://www.w3schools.com/html/movie.mp4"></video>
-<video controls width="250"><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-
-</div>
-
+<!-- FOOTER -->
 <footer>
 <p>© 2026 Mental Health Awareness | James</p>
 </footer>
