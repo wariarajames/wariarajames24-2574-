@@ -5,112 +5,82 @@
 
 <style>
 
-/* RESET */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+/* GENERAL */
+html{
+scroll-behavior:smooth;
 }
 
-/* BODY */
 body{
-background:linear-gradient(120deg,#0f172a,#1e293b);
-color:#f1f5f9;
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f6f8;
 }
 
 /* NAVBAR */
 nav{
-display:flex;
-justify-content:center;
-gap:30px;
-padding:20px;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
+background:#1f2937;
+padding:15px;
+text-align:center;
 position:sticky;
 top:0;
 }
 
 nav a{
-color:#e2e8f0;
+color:white;
+margin:0 15px;
 text-decoration:none;
-font-weight:500;
-transition:0.3s;
+font-weight:bold;
 }
 
 nav a:hover{
 color:#38bdf8;
 }
 
-/* HERO */
-.hero{
-text-align:center;
-padding:80px 20px;
+/* SECTIONS */
+section{
+padding:40px;
 }
 
-.hero h1{
-font-size:3rem;
+/* HERO */
+#home{
+text-align:center;
+background:#e0f2fe;
+}
+
+h1,h2{
 margin-bottom:10px;
 }
 
-.hero p{
-opacity:0.7;
-}
-
-/* SECTION */
-section{
-padding:40px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-/* PARAGRAPHS */
-.text p{
-margin-bottom:15px;
-line-height:1.6;
-opacity:0.8;
-}
-
-/* GRID */
+/* COLUMNS */
 .columns{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:25px;
+gap:20px;
 }
 
 /* CARD */
 .card{
-background:rgba(255,255,255,0.05);
-padding:25px;
-border-radius:15px;
-backdrop-filter:blur(10px);
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-
-/* LIST */
-ul{
-padding-left:20px;
-}
-
-ul li{
-margin:8px 0;
+transform:translateY(-5px);
 }
 
 /* TABLE */
 table{
 width:100%;
-margin-top:20px;
 border-collapse:collapse;
+margin-top:10px;
 }
 
 th,td{
+border:1px solid #ccc;
 padding:10px;
-border-bottom:1px solid rgba(255,255,255,0.1);
 text-align:left;
 }
 
@@ -118,12 +88,12 @@ text-align:left;
 .images{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:15px;
+gap:10px;
 }
 
 .images img{
 width:100%;
-border-radius:12px;
+border-radius:10px;
 transition:0.3s;
 }
 
@@ -131,69 +101,64 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
-/* VIDEOS */
-.videos{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:15px;
-}
-
-video{
-width:100%;
-border-radius:12px;
-}
-
 /* FOOTER */
 footer{
+background:#1f2937;
+color:white;
 text-align:center;
-padding:25px;
-margin-top:40px;
-background:rgba(255,255,255,0.05);
+padding:15px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- NAV -->
+<!-- NAVBAR -->
 <nav>
-<a href="index.html">Home</a>
-<a href="#">About</a>
-<a href="#">Resources</a>
-<a href="#">Contact</a>
-<a href="assignment5.html">Project</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#resources">Resources</a>
+<a href="#contact">Contact</a>
+<a href="#location">Location</a>
 </nav>
 
-<!-- HERO -->
-<div class="hero">
+<!-- HOME -->
+<section id="home">
 <h1>Mental Health Awareness</h1>
-<p>Building a healthier mind, one step at a time</p>
-</div>
-
-<!-- TEXT -->
-<section class="text">
-<p>Mental health plays a key role in how we think, feel, and behave daily.</p>
-<p>Understanding mental health helps break stigma and encourages open conversations.</p>
-<p>Developing healthy habits contributes to long-term emotional stability.</p>
-<p>Support systems such as friends and family are essential for well-being.</p>
-<p>Seeking help is a sign of strength and self-awareness.</p>
+<p>Promoting emotional well-being and mental strength.</p>
 </section>
 
-<!-- COLUMNS -->
-<section class="columns">
+<!-- ABOUT -->
+<section id="about">
+<h2>About</h2>
+
+<p>Mental health is an important part of overall well-being and affects how people think and behave.</p>
+<p>Raising awareness helps reduce stigma and encourages people to seek help.</p>
+<p>Support systems play a key role in improving emotional stability.</p>
+<p>Healthy habits such as exercise and rest improve mental health.</p>
+<p>Everyone deserves access to mental health support.</p>
+
+</section>
+
+<!-- RESOURCES -->
+<section id="resources">
+
+<h2>Resources</h2>
+
+<div class="columns">
 
 <div class="card">
-<h2>Healthy Habits</h2>
+<h3>Healthy Practices</h3>
 
 <ul>
-<li>Sleep well</li>
 <li>Exercise regularly</li>
-<li>Eat balanced meals</li>
-<li>Meditate daily</li>
+<li>Eat healthy</li>
+<li>Sleep well</li>
 <li>Stay hydrated
     <ul>
-        <li>Drink enough water</li>
+        <li>Drink water</li>
         <li>Avoid too much sugar</li>
     </ul>
 </li>
@@ -202,17 +167,10 @@ background:rgba(255,255,255,0.05);
 </div>
 
 <div class="card">
-<h2>Activities & Benefits</h2>
+<h3>Weekly Plan</h3>
 
 <table>
-<tr><th>Activity</th><th>Benefit</th></tr>
-<tr><td>Exercise</td><td>Reduces stress</td></tr>
-<tr><td>Meditation</td><td>Improves focus</td></tr>
-<tr><td>Journaling</td><td>Emotional clarity</td></tr>
-</table>
-
-<table>
-<tr><th>Day</th><th>Routine</th></tr>
+<tr><th>Day</th><th>Activity</th></tr>
 <tr><td>Monday</td><td>Meditation</td></tr>
 <tr><td>Wednesday</td><td>Exercise</td></tr>
 <tr><td>Friday</td><td>Relaxation</td></tr>
@@ -220,11 +178,14 @@ background:rgba(255,255,255,0.05);
 
 </div>
 
+</div>
+
 </section>
 
 <!-- IMAGES -->
 <section>
-<h2 style="margin-bottom:20px;">Gallery</h2>
+
+<h2>Gallery</h2>
 
 <div class="images">
 <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
@@ -236,23 +197,22 @@ background:rgba(255,255,255,0.05);
 
 </section>
 
-<!-- VIDEOS -->
-<section>
-<h2 style="margin-bottom:20px;">Videos</h2>
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: support@mentalhealth.com</p>
+<p>Phone: 0712345678</p>
+</section>
 
-<div class="videos">
-<video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-<video controls><source src="https://www.w3schools.com/html/movie.mp4"></video>
-<video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-<video controls><source src="https://www.w3schools.com/html/movie.mp4"></video>
-<video controls><source src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-</div>
-
+<!-- LOCATION -->
+<section id="location">
+<h2>Location</h2>
+<p>Nairobi, Kenya</p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-<p>© 2026 Mental Health Awareness | Designed by James</p>
+<p>© 2026 Mental Health Awareness | James</p>
 </footer>
 
 </body>
